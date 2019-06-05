@@ -1,0 +1,9 @@
+V1 Requirements: Update add functionality
+(x) When you access the application, focus on the #addTodoInputText
+(x) Remove the Add button and setup an event listener for adding todos when a user presses the enter key on #addTodoInputText
+(x) Add a placeholder "Add Something to Your Todo List Here"
+(x) Make #addTodoInputText wider and add padding-left to it
+(x) If the value of the input is empty and enter is pressed, do nothing
+
+V2 Requirements: Update display functionality
+() Create the html of where the todo list items will be displayed
