@@ -6,4 +6,10 @@ V1 Requirements: Update add functionality
 (x) If the value of the input is empty and enter is pressed, do nothing
 
 V2 Requirements: Update display functionality
-() Create the html of where the todo list items will be displayed
+(x) Create the html of where the todo list items will be displayed
+(x) If the todo list items have one or more todos, display #todoListView, else hide it
+(x) Create a way to store and access your todo list to local storage
+(x) Update todolist.addTodo so that it stores the todos into local storage
+(x) When you access the application, show all the todos that were stored in local storage.
+
+V3 Requirements: Update toggle todo functionality

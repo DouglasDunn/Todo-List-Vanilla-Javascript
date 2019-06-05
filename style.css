@@ -1,3 +1,7 @@
 #addTodoInputText {
-    padding-left: 15px; 
+    padding-left: 15px;
+}
+
+#todoListView {
+    display: none;
 }

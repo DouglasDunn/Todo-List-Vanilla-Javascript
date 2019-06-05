@@ -7,6 +7,8 @@ var todoList = {
             todoText: todoText,
             completed: false
         });
+
+        localStorage.setItem('todoList', JSON.stringify(this.todos));
     },
     changeTodo: function(position, todoText) {
         this.todos[position].todoText = todoText;
@@ -76,7 +78,15 @@ var handlers = {
 
 var view = {
     displayTodos: function() {
+        var todoListView = document.getElementById('todoListView');
         var todosUl = document.querySelector("ul");
+
+        if (todoList.todos.length !== 0) {
+            todoListView.style.display = "block";
+        } else {
+            todoListView.style.display = "none";
+        }
+
         todosUl.innerHTML = "";
 
         todoList.todos.forEach(function(todo, position) {
@@ -118,8 +128,14 @@ var view = {
     initializeApplication: function() {
         var addTodoInputText = document.getElementById('addTodoInputText');
 
-        this.setUpEventListeners();
+        if (localStorage.getItem('todoList') === null) {
+            localStorage.setItem('todoList', '[]');
+        } else {
+            todoList.todos = JSON.parse(localStorage.getItem('todoList'));
+        }
 
+        this.displayTodos();
+        this.setUpEventListeners();
         addTodoInputText.focus();
     }
 }
