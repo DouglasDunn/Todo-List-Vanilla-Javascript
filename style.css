@@ -5,3 +5,10 @@
 #todoListView {
     display: none;
 }
+
+label {
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+}

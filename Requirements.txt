@@ -10,6 +10,14 @@ V2 Requirements: Update display functionality
 (x) If the todo list items have one or more todos, display #todoListView, else hide it
 (x) Create a way to store and access your todo list to local storage
 (x) Update todolist.addTodo so that it stores the todos into local storage
-(x) When you access the application, show all the todos that were stored in local storage.
+(x) When you access the application, show all the todos that were stored in local storage
 
 V3 Requirements: Update toggle todo functionality
+(x) Create a createToggleButton function and prepend each button to a todo
+(x) If todo.completed is true, create a strike through in the todo text
+(x) If todo.completed is true, .toggleButton should be checked
+(x) toggleButton should have an eventListener
+(x) todoList.toggleCompleted should update local storage
+(x) Have the displayed todos be placed in labels
+
+V4 Requirements
